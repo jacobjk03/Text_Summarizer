@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Input</title>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+      <div class="card">
+        <div class="card__header">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY_Ce8XEVbtVQzcyxUjSiyD_92pnoj4JHaxLCvctch0_1KZFhkWn1urFYhzB3AgdXxi9g&usqp=CAU" alt="card__image" class="card__image" width="600">
+        </div>
+        <div class="card__body">
+          <span ></span>
+          <form method="post" action="/summarize/" enctype="multipart/form-data">
+        <label for="ARTICLE_TO_SUMMARIZE">Text: </label>
+        <textarea name="ARTICLE_TO_SUMMARIZE"></textarea> <br>
+
+        <input type="submit" value="Submit">
+    </form>
+        </div>
+        <div class="card__footer">
+
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
